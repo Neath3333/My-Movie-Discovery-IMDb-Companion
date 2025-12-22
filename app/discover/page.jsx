@@ -1,5 +1,6 @@
 import React from "react";
 import { getTrendingMovies,getPopularMovies,getUpcomingMovies } from "../../lib/tmdb";
+import MovieCard from "../../components/movieCard";
 
 export default async function DiscoverPage() {
   const trending = await getTrendingMovies();
@@ -15,6 +16,7 @@ return(
             {trending.results.map(movie=>{
                 <li key={movie.id}>{movie.title}</li>
             })}
+            <MovieCard movie={trending.results[0]} />
         </ul>
         <h2>Popular Movies</h2>
         <ul>
