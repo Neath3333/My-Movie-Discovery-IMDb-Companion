@@ -1,5 +1,5 @@
-import MovieCard from "@/components/MovieCard";
-import { getPopularMovies } from "../lib/tmdb";
+import MovieCard from "@/components/movieCard";
+import { getPopularMovies } from "@/lib/tmdb";
 import React from "react";
 
 export default async function DiscoverPage() {
