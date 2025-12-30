@@ -42,3 +42,13 @@ export default function MovieCard({ movie }) {
     </div>
   );
 }
+movie.propTypes = {
+  movie: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    poster_path: PropTypes.string,
+    release_date: PropTypes.string, 
+    overview: PropTypes.string,
+    link: PropTypes.string,
+  }).isRequired,
+};
