@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import MovieCard from '../components/MovieCard';
+//import MovieCard from '../components/MovieCard';
 
 
 export default function Home() {

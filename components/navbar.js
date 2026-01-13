@@ -18,7 +18,7 @@
     const pathname = usePathname();
 
     return (
-      <nav className="flex p-6 bg-white-800 text-black items-center justify-center">
+      <nav className="flex p-6 bg-white/50 text-black items-center justify-center">
         <Image src="/logo.png" alt="logo" width={100} height={100} />
         <h1 className="mr-130 pl-10 text-xl font-bold">MOVIE SPACE</h1>
         <ul className="flex space-x-10">
@@ -30,8 +30,8 @@
                   href={link.href}
                   className={
                     isActive
-                      ? 'text-blue-600 font-bold border-b-2 border-blue-600'
-                      : 'hover:text-blue-600 transition-colors'
+                      ? 'text-lime-800 font-bold border-b-2 border-lime-600'
+                      : 'hover:text-lime-200 transition-colors'
                   }
                 >
                   {link.name}
