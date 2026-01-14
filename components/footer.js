@@ -17,8 +17,8 @@ export default function Footer() {
           <ul className="text-blue-600 ml-[80px] space-x-10 font-light">
             <li><Link href="/about" >About Us</Link></li>
             <li><Link href="/discover">Discover</Link></li>
-            <li><Link href="/privacy_policy">Privacy Policy</Link></li>
-            <li><Link href="/terms_service" >Terms of Service</Link></li>
+            <li><Link href="/policy">Privacy Policy</Link></li>
+            <li><Link href="/terms" >Terms of Service</Link></li>
             <li><Link href="/setting">Settings</Link></li>
           </ul>
         </div>
