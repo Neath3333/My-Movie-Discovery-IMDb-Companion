@@ -115,17 +115,62 @@ export default function terms() {
         </ul>
         <p>
           We do not control these services and are not responsible for:
-        </p>
+        </p><br />
         <ul className="list-disc pl-10">
           <li>Their availability</li>
           <li>Infringes on intellectual property rights</li>
           <li>Accuracy of their data</li>
           <li>Changes to their APIs or policies</li>
+        </ul>
         <p>
           Use of third-party services is subject to their respective terms.
         </p>
+        
+      </div><br />
+      <div>
+        <h2>7. IMDb Disclaimer (Important)</h2>
+        <ul className="list-disc pl-10">
+          <li>IMDb does not provide a public API for posting reviews.</li>
+          <li>This Service does not automatically post reviews to IMDb.</li>
+          <li>Any IMDb-related functionality is limited to:</li>
         </ul>
-      </div>
+        <ul className="list-disc pl-20">
+          <li>Preparing review text</li>
+          <li>Opening IMDb pages</li>
+          <li>Copying content for manual user submission</li>
+          <li>Changes to their APIs or policies</li>
+        </ul>
+        <p>You are responsible for complying with IMDb’s Terms of Use when posting reviews.</p>
+      </div><br />
+       <div>
+        <h2>8. Automatic Sharing & Webhooks</h2>
+        <p>If you enable automatic sharing:</p>
+        <ul className="list-disc pl-10">
+          <li>Reviews may be sent to external services using URLs you provide.</li>
+          <li>You are responsible for ensuring you have permission to post content to those services.</li>
+          <li>The Service is not responsible for failed deliveries, formatting differences, or third-party moderation actions.</li>
+        </ul>
+      </div><br />
+       <div>
+        <h2>9. Data Storage & Privacy</h2>
+        <ul className="list-disc pl-10">
+          <li>Your data (reviews, watchlists, taste profiles) is stored locally in the Service’s database.</li>
+          <li>Authentication data is handled securely.</li>
+          <li>Public share links expose only the content you choose to share.</li>
+        </ul>   
+        <p>For more details, refer to the Privacy Policy (if provided).</p>
+      </div><br />
+      <div>
+        <h2>10. Availability & Changes</h2>
+        <p>The Service is provided <strong>“as is”</strong> and <strong>“as available.”</strong></p><br />
+        <p>We may:</p>
+        <ul className="list-disc pl-10">
+          <li>Modify features</li>
+          <li>Add or remove functionality</li>
+          <li>Temporarily or permanently suspend the Service</li>
+        </ul>   
+       <p> </p>
+      </div><br />
     </div>
   );
 }
