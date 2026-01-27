@@ -1,13 +1,11 @@
     'use client'
     import React from "react";
     import Image from "next/image";
-    import Link  from "next/link";
     import proptypes from 'prop-types'; 
     
 
     export default function MovieCard({movie}){
     if (!movie) return null;
-    return <div>{movie.title}</div>;
 
     const imageUrl = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
@@ -24,11 +22,12 @@
         <h3>{movie.title}</h3>
         
         </div> 
-        Proptypes.MovieCard = {
+
+    ) };
+    MovieCard.propTypes = {
         movie: proptypes.shape({
             id: proptypes.number.isRequired,
             title: proptypes.string.isRequired,
             poster_path: proptypes.string,
-        }),
-    ) };
-    };
+            }), 
+        };
