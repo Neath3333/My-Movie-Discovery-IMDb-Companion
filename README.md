@@ -1,6 +1,6 @@
 ## Goals
 
-
+The main goal is to work on a project that called "Movie Space" that allow user to leave a review on specific movie , view the other user reviews and get recommedation of movie that match user taste.
 
 ## Stack
 
