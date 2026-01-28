@@ -19,7 +19,7 @@
         height={400}
         alt={movie.title}
         />
-        <h3>{movie.title}</h3>
+        <h3 className="text-[7px]">{movie.title}</h3>
         
         </div> 
 

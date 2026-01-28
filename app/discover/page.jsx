@@ -7,9 +7,11 @@ export default async function DiscoverPage() {
   const movieArray = movies.results; // array of movie objects
 
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-4 gap-4 p-4xl">
       {movieArray.map(movie => (
-        <MovieCard key={movie.id} movie={movie} />
+        <div key={movie.id} className="text-blue-300 text-[18px] hover:scale-105 transition-transform duration-200 p-4xl">
+        <MovieCard  movie={movie} />
+        </div>
       ))}
     </div>
   );
