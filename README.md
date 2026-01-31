@@ -7,6 +7,12 @@ The main goal is to work on a project that called "Movie Space" that allow user 
 - Tailwind
 - Javascript 
 - Next Js
+**Database**
+- Prisma ORM
+- SQLite
+**Backend**
+- Node Js
+
 
 ## Features
 
