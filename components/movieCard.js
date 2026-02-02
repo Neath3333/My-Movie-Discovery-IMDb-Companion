@@ -1,7 +1,7 @@
     'use client'
     import React from "react";
     import Image from "next/image";
-    import proptypes from 'prop-types'; 
+    import PropTypes from 'prop-types'; 
     
 
     export default function MovieCard({movie}){
@@ -19,15 +19,27 @@
         height={400}
         alt={movie.title}
         />
-        <h3 className="text-[7px]">{movie.title}</h3>
+        <div className="space-y-1 p-2">
+            {/* Title */}
+        <h3 className="text-[7px] line-clamp-1 font-semibold">{movie.title}</h3>
+            {/* Rating + year*/}
+        <p className="text-xs">⭐{movie.vote_average?.toFixed(1)} | {movie.release_date?.slice(0,4)}</p>
+        {/* Short Overview */}
+        <p className="text-[16px] line-clamp-2">{movie.overview} </p>
+         {/* Like Button */}
+
         
+        </div>
         </div> 
 
     ) };
     MovieCard.propTypes = {
-        movie: proptypes.shape({
-            id: proptypes.number.isRequired,
-            title: proptypes.string.isRequired,
-            poster_path: proptypes.string,
+        movie: PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            title: PropTypes.string.isRequired,
+            poster_path: PropTypes.string,
+            vote_average: PropTypes.number,
+            release_date: PropTypes.string,
+            overview: PropTypes.string,
             }), 
         };
